@@ -10,7 +10,6 @@ const macroSchema = new mongoose.Schema({
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
     },
     email: {
         type: String,
@@ -55,12 +54,10 @@ const userSchema = new mongoose.Schema({
     gender: {
         type: String,
         enum: ["Male", "Female", "Other"],
-        required: true
     },
     activityLevel: {
         type: String,
         enum: ["Low", "Medium", "High"],
-        required: true
     },
     BMR: {
         type: Number,
@@ -73,7 +70,6 @@ const userSchema = new mongoose.Schema({
     goal: {
         type: String,
         enum: ["Weight Loss", "Weight Gain", "Maintenance", "Aggressive Weight Loss"],
-        required: true
     },
     targetCalories: {
         type: Number,

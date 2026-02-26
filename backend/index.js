@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 const helmet = require("helmet");
 const connectDB = require("./config/db.js");
+const authRouter = require("./routers/authRouter.js");
 
 dotenv.config();
 const app = express();
@@ -16,6 +17,8 @@ app.use(bodyParser.json());
 app.use(morgan("dev"));
 app.use(helmet());
 
+
+app.use("/api/auth", authRouter);
 const PORT = process.env.PORT || 3000;
 
 connectDB().then();
