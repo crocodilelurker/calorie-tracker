@@ -8,12 +8,13 @@ dotenv.config();
 
 
 const authMiddleware = (req, res, next) => {
-    const authToken = req.cookies.auth_token;
+    const authToken = req.cookies["x-auth-token"];
     if (!authToken) {
         return response(res, 401, "Token Not Found");
     }
     try {
         const decode = jwt.decode(authToken, process.env.JWT_SECRET_KEY);
+        console.log(decode);
         req.user = decode;
         next();
     } catch (error) {
