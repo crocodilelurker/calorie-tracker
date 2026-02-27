@@ -59,7 +59,31 @@ const authMe = async (req, res) => {
     }
 }
 const updateProfile = async (req, res) => {
-
+    try {
+        const { name, description, profilePhoto, weight, height, age, gender, activityLevel, goal } = req.body;
+        let user = await User.findById(req.user.user_id);
+        if(!user) {
+            return response(res,404, "User Not Found",null);
+        }
+        else
+        {
+            user.name = name;
+            user.description = description;
+            user.profilePhoto = profilePhoto;
+            user.weight = weight;
+            user.height = height;
+            user.age = age;
+            user.gender = gender;
+            user.activityLevel = activityLevel;
+            user.goal = goal;
+            user.isNewUser = false;
+            await user.save();
+            return response(res,200,"Profile Updated Successfully",user);
+        }
+    } catch (error) {
+        console.error("ISE", error);
+        return response(res, 500, "ISE", null);
+    }
 }
 const logout = async (req, res) => {
     //set x-auth-token to null and expire immediately 
