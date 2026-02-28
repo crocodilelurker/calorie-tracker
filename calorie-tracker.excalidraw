@@ -573,7 +573,7 @@
       "type": "text",
       "x": 274.1057703024039,
       "y": 467.1290812986289,
-      "width": 81.0599365234375,
+      "width": 68.09996032714844,
       "height": 25,
       "angle": 0,
       "strokeColor": "#1971c2",
@@ -588,8 +588,8 @@
       "index": "aC",
       "roundness": null,
       "seed": 1862189460,
-      "version": 41,
-      "versionNonce": 1998584108,
+      "version": 57,
+      "versionNonce": 1391482040,
       "isDeleted": false,
       "boundElements": [
         {
@@ -597,16 +597,16 @@
           "type": "arrow"
         }
       ],
-      "updated": 1771789388382,
+      "updated": 1772214684623,
       "link": null,
       "locked": false,
-      "text": "DailyLog",
+      "text": "Report",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "DailyLog",
+      "originalText": "Report",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -616,7 +616,7 @@
       "x": 203.84852287328093,
       "y": 480.80754334590824,
       "width": 64.257247429123,
-      "height": 1.0755343684011223,
+      "height": 1.075534368401179,
       "angle": 0,
       "strokeColor": "#1971c2",
       "backgroundColor": "transparent",
@@ -632,11 +632,11 @@
         "type": 2
       },
       "seed": 1251288108,
-      "version": 96,
-      "versionNonce": 1101001644,
+      "version": 97,
+      "versionNonce": 2078502328,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1771789388383,
+      "updated": 1772214681470,
       "link": null,
       "locked": false,
       "points": [
@@ -646,7 +646,7 @@
         ],
         [
           64.257247429123,
-          -1.0755343684011223
+          -1.075534368401179
         ]
       ],
       "startBinding": null,
@@ -808,6 +808,43 @@
         1
       ],
       "crop": null
+    },
+    {
+      "id": "oKduzi5npLTBOqQvexaNQ",
+      "type": "text",
+      "x": -159.64175698501634,
+      "y": 377.4705722943138,
+      "width": 319.039794921875,
+      "height": 50,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aI",
+      "roundness": null,
+      "seed": 227303864,
+      "version": 55,
+      "versionNonce": 1905832120,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1772217218163,
+      "link": null,
+      "locked": false,
+      "text": "How to write tests for backend \nexpressJS",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "How to write tests for backend \nexpressJS",
+      "autoResize": true,
+      "lineHeight": 1.25
     }
   ],
   "appState": {
